@@ -19,7 +19,7 @@
                     <button class="list__button list__button--done">
                         ${task.done ? "✔" : ""}
                     </button>
-                    ${task.content}
+                    <span  ${task.done ? "class=\"list__text--throughLine\"" : ""}>${task.content}</span>
                     <button class="list__button list__button--remove">🗑</button>
                 </li>
             `;

@@ -23,6 +23,10 @@
     background-color: rgb(25, 123, 28);
 }
 
+.list__text--throughLine {
+    text-decoration: line-through;
+}
+
 .list__button--remove {
     background-color: rgb(236, 39, 59);
 }
