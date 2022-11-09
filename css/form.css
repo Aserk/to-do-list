@@ -1,0 +1,17 @@
+.form {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+.form__field {
+    padding: 10px;
+}
+
+.form__field--button {
+    background-color: rgb(0, 115, 131);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+}

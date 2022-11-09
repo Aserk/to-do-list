@@ -1,0 +1,20 @@
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list__item {
+    padding: 10px;
+    border-bottom: 2px solid #eeedef;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+}
+
+.list__button--done {
+    background-color: rgb(25, 123, 28);
+}
+
+.list__button--remove {
+    background-color: rgb(236, 39, 59);
+}

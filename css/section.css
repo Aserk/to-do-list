@@ -1,0 +1,10 @@
+section {
+    background-color: white;
+    margin: 10px 0;
+}
+
+.section__element {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 2px solid #eeedef;
+}
