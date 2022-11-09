@@ -18,6 +18,11 @@
         render();
     };
 
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
+                render();
+    };
+
     const render = () => {
         let htmlString = "";
 
@@ -30,12 +35,20 @@
                     <span  ${task.done ? "class=\"list__text--throughLine\"" : ""}>
                         ${task.content}
                     </span>
-                    <button class="list__button list__button--remove">🗑</button>
+                    <button class="list__button list__button--remove js-remove">🗑</button>
                 </li>
             `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+            });
+        });
     };
 
     const onFormSubmit = (event) => {
