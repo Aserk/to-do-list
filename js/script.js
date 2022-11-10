@@ -16,6 +16,8 @@
         });
 
         render();
+
+        return "";
     };
 
     const removeTask = (taskIndex) => {
@@ -71,19 +73,22 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const inputField = document.querySelector(".js-newTask");
+        const newTaskContent = inputField.value.trim();
+
+        inputField.focus();
         
         if (newTaskContent === "") {
             return;
         }
 
-        addNewTask(newTaskContent);
+        inputField.value = addNewTask(newTaskContent);
     };
 
     const init = () => {
         render();
 
-        const form = document.querySelector(".js-form");
+        const form = document.querySelector(".js-form");        
 
         form.addEventListener("submit", onFormSubmit);
     };
