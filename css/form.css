@@ -9,6 +9,10 @@
     padding: 10px;
 }
 
+.form__field--input {
+    border: 2px solid #eeedef;
+}
+
 .form__field--button {
     background-color: rgb(0, 115, 131);
     color: white;
