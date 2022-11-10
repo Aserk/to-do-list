@@ -19,3 +19,10 @@
     font-family: 'Montserrat', sans-serif;
     border: 0;
 }
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
