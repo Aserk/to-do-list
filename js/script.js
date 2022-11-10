@@ -46,7 +46,7 @@
                     <button class="list__button list__button--toggleDone js-done">
                         ${task.done ? "✔" : ""}
                     </button>
-                    <span  ${task.done ? "class=\"list__text--throughLine\"" : ""}>
+                    <span  ${task.done ? "class=\"list__text--done\"" : ""}>
                         ${task.content}
                     </span>
                     <button class="list__button list__button--remove js-remove">

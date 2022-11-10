@@ -13,7 +13,7 @@
     border-bottom: 1px solid #ddd;
 }
 
-.list__text--throughLine {
+.list__text--done {
     text-decoration: line-through;
 }
 
