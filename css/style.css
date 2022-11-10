@@ -10,5 +10,6 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #eeedef;
+    background-color: #eee;
+    word-break: break-word;
 }
