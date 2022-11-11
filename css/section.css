@@ -4,11 +4,44 @@ section {
     box-shadow: 0 0 5px #ddd;
 }
 
+.section__containerHeader {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+    .section__containerHeader {
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+    }
+}
+
 .section__header {
     font-size: 20px;
     margin: 0;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        padding-bottom: 0;
+    }
+}
+
+.section__button {
+    color: teal;
+    background-color: white;
+    border: none;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__button:active {
+    color: hsl(180, 100%, 35%);
 }
 
 .section__body {
