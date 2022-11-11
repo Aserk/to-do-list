@@ -29,7 +29,7 @@
         render();
     };
 
-    const bindEvents = () => {
+    const bindEventsRemoveButtons = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -37,7 +37,9 @@
                 removeTask(index);
             });
         });
+    };
 
+    const bindEventsToogleDoneButtons = () => {
         const toogleDoneButtons = document.querySelectorAll(".js-done");
 
         toogleDoneButtons.forEach((toogleDoneButton, index) => {
@@ -68,7 +70,8 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        bindEvents();
+        bindEventsRemoveButtons();
+        bindEventsToogleDoneButtons();
     };
 
     const onFormSubmit = (event) => {
