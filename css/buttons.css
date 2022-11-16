@@ -1,9 +1,9 @@
-.button {
+.buttons {
     display: flex;
     flex-wrap: wrap;
 }
 
-.button__buttons {
+.buttons__button {
     color: teal;
     background-color: transparent;
     border: none;
@@ -12,20 +12,20 @@
 }
 
 @media (max-width: 767px) {
-    .button__buttons {
+    .buttons__button {
         flex-basis: 100%;
         margin: 10px;
     }
 }
 
-.button__buttons:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 30%);
 }
 
-.button__buttons:active {
+.buttons__button:active {
     color: hsl(180, 100%, 35%);
 }
 
-.button__buttons:disabled {
+.buttons__button:disabled {
     color: #ccc;
 }
