@@ -109,11 +109,11 @@
 
         if (tasks.length > 0) {
             renderedButtons += `
-                <button class="section__button js-hideDoneTask">
+                <button class="button__buttons js-hideDoneTask">
                     ${hiddenDoneTask ? "Pokaż" : "Ukryj"} ukończone
                 </button>
                 <button 
-                    class="section__button js-allDone"
+                    class="button__buttons js-allDone"
                     ${tasks.every(({done}) => done) ? "disabled" : ""}
                 >
                     Ukończ wszystkie

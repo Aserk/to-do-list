@@ -23,38 +23,6 @@ section {
     margin: 0;
 }
 
-.section__containerButtons {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.section__button {
-    color: teal;
-    background-color: transparent;
-    border: none;
-    margin-left: 20px;
-    transition: color 0.5s;
-}
-
-@media (max-width: 767px) {
-    .section__button {
-        flex-basis: 100%;
-        margin: 10px;
-    }
-}
-
-.section__button:hover {
-    color: hsl(180, 100%, 30%);
-}
-
-.section__button:active {
-    color: hsl(180, 100%, 35%);
-}
-
-.section__button:disabled {
-    color: #ccc;
-}
-
 .section__body {
     padding: 20px;
 }
